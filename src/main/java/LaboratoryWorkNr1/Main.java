@@ -10,21 +10,28 @@ public class Main {
 
         //########################################################
         System.out.println("Substitution Caesar Cipher :");
-        CaesarSubstitutionCipher cipher1 = new CaesarSubstitutionCipher(4);
-        System.out.println("Encrypted message -> " + cipher1.encrypt("MAGICAL"));
-        System.out.println("Decrypted message -> " + cipher1.decrypt(cipher1.encrypt("MAGICAL")));
+        String plaintext1 = "MAGICAL";
+        int key1 = 4;
+        System.out.println("Plaintext = '" + plaintext1 + "' and the key = " + key1);
+        CaesarSubstitutionCipher cipher1 = new CaesarSubstitutionCipher(key1);
+        System.out.println("Encrypted message -> " + cipher1.encrypt(plaintext1));
+        System.out.println("Decrypted message -> " + cipher1.decrypt(cipher1.encrypt(plaintext1)));
         //########################################################
         System.out.println("---------------------------------------------");
         //########################################################
         System.out.println("Vigenere Cipher :");
-        VigenereCipher cipher2 = new VigenereCipher("HELLO");
-        System.out.println("Encrypted message -> " + cipher2.encrypt("BANANA"));
-        System.out.println("Decrypted message -> " + cipher2.decrypt(cipher2.encrypt("BANANA")));
+        String plaintext2 = "BANANA";
+        String key2 = "HELLO";
+        System.out.println("Plaintext = '" + plaintext2 + "' and the key = " + key2);
+        VigenereCipher cipher2 = new VigenereCipher(key2);
+        System.out.println("Encrypted message -> " + cipher2.encrypt(plaintext2));
+        System.out.println("Decrypted message -> " + cipher2.decrypt(cipher2.encrypt(plaintext2)));
         //########################################################
         System.out.println("---------------------------------------------");
         System.out.println("PlayFair Cipher :");
         String textToBeEncrypted = "hi world";
         String key = "java";
+        System.out.println("Plaintext = '" + textToBeEncrypted + "' and the key = " + key);
         PlayFairCipher playFairCipher = new PlayFairCipher();
         String matrix = playFairCipher.createMatrix(key.replace(" ", ""));
         String[] pairs = playFairCipher.divideInPairs(textToBeEncrypted.replace("j", "i"));
@@ -34,8 +41,11 @@ public class Main {
         //########################################################
         System.out.println("---------------------------------------------");
         System.out.println("Affine Cipher :");
-        AffineCipher affineCipher = new AffineCipher(17, 20);
+        int key_one = 17;
+        int key_two = 20;
+        AffineCipher affineCipher = new AffineCipher(key_one, key_two);
         String text = "HI WORLD";
+        System.out.println("Plaintext = '" + text + "' and the keys = " + key_one + ", " + key_two);
         System.out.println("Encrypted message -> " + affineCipher.encrypt(text));
         System.out.println("Decrypted message -> " + affineCipher.decrypt(affineCipher.encrypt(text)));
     }
