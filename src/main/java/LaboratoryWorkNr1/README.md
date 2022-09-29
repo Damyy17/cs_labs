@@ -319,7 +319,7 @@ public String decrypt(String[] pairs, String matrix){
 ## Conclusions and Results
 The results of all ciphers are in the screenshot below: <br />
 
-![Results](D:\HW University\Year3\CS-LABS\src\main\java\LaboratoryWorkNr1\images\results.png)
+![Results](images/results.png)
 
 In conclusion, this laboratory work was elaborated successful, during the work on lab, a lot of information was 
 found to be able to implement all the ciphers. All objectives that were proposed have been achieved, encrypting and decrypting
