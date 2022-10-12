@@ -10,7 +10,7 @@ public class DES implements Crypting2{
             5, 63, 55, 47, 39, 31, 23, 15, 7 };
 
     // Inverse Initial Permutation Table
-    int[] IP1 = { 40, 8, 48, 16, 56, 24, 64, 32, 39, 7, 47,
+    int[] FP = { 40, 8, 48, 16, 56, 24, 64, 32, 39, 7, 47,
             15, 55, 23, 63, 31, 38, 6, 46, 14, 54, 22,
             62, 30, 37, 5, 45, 13, 53, 21, 61, 29, 36,
             4, 44, 12, 52, 20, 60, 28, 35, 3, 43, 11,
@@ -248,7 +248,7 @@ public class DES implements Crypting2{
                 + plainText.substring(0, 8);
 
         // final permutation
-        plainText = permutation(IP1, plainText);
+        plainText = permutation(FP, plainText);
         return plainText;
     }
 
@@ -268,7 +268,7 @@ public class DES implements Crypting2{
         // 32-bit swap
         plainText = plainText.substring(8, 16)
                 + plainText.substring(0, 8);
-        plainText = permutation(IP1, plainText);
+        plainText = permutation(FP, plainText);
         return plainText;
     }
 }

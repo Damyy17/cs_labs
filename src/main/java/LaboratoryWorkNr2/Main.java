@@ -15,6 +15,8 @@ public class Main {
         System.out.println("Encrypted message:" + rc4.encrypt(message, key));
         System.out.println("Decrypted message: " + rc4.decrypt(rc4.encrypt(message, key), StandardCharsets.UTF_8, key));
         
+        System.out.println();
+
         System.out.println("-------------------------------------------------------------");
 
         System.out.println();

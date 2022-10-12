@@ -4,9 +4,7 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
-public class RC4 {
-    private static final int SBOX_LENGTH = 256;
-    private static final int KEY_MINIMAL_LENGTH = 5;
+public class RC4 implements RC4CRYPT{
 
     private byte[] key = new byte[SBOX_LENGTH - 1];
     private int[] sbox = new int[SBOX_LENGTH];
