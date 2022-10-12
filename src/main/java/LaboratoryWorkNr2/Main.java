@@ -1,0 +1,21 @@
+package LaboratoryWorkNr2;
+
+import java.nio.charset.StandardCharsets;
+
+import LaboratoryWorkNr2.StreamCiphers.RC4;
+
+public class Main {
+    public static void main(String[] args) {
+        //RC4 Stream Cipher 
+        System.out.println("RC4 Stream Cipher: ");
+        RC4 rc4 = new RC4();
+        String message = "hellloworrldd";
+        String key = "amazing";
+        System.out.println("Encrypted message:" + rc4.encrypt(message, key));
+        System.out.println("Decrypted message: " + rc4.decrypt(rc4.encrypt(message, key), StandardCharsets.UTF_8, key));
+        
+        System.out.println("-------------------------------------------------------------");
+
+        System.out.println();
+    }
+}
