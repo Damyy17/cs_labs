@@ -2,6 +2,7 @@ package LaboratoryWorkNr2;
 
 import java.nio.charset.StandardCharsets;
 
+import LaboratoryWorkNr2.BlockCiphers.DES;
 import LaboratoryWorkNr2.StreamCiphers.RC4;
 
 public class Main {
@@ -17,5 +18,13 @@ public class Main {
         System.out.println("-------------------------------------------------------------");
 
         System.out.println();
+        DES des = new DES();
+        System.out.println("DES Block Cipher: ");
+
+        String message2 = "17072001DAAC3012";
+        String key2 = "ABCD0123456789AB";
+        System.out.println("Encrypted message:" + des.encrypt(message2, key2));
+        System.out.println("Decrypted message:" + des.decrypt(des.encrypt(message2, key2), key2));
     }
+
 }
