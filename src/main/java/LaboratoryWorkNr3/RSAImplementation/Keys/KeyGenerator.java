@@ -1,4 +1,4 @@
-package LaboratoryWorkNr3.Keys;
+package LaboratoryWorkNr3.RSAImplementation.Keys;
 
 import java.math.BigInteger;
 import java.security.SecureRandom;

@@ -1,4 +1,4 @@
-package LaboratoryWorkNr3.RSA;
+package LaboratoryWorkNr3.RSAImplementation.RSA;
 
 import java.math.BigInteger;
 

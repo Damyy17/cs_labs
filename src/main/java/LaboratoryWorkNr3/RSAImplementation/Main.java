@@ -1,8 +1,8 @@
-package LaboratoryWorkNr3;
+package LaboratoryWorkNr3.RSAImplementation;
 
-import LaboratoryWorkNr3.Keys.KeyGenerator;
-import LaboratoryWorkNr3.Keys.KeySet;
-import LaboratoryWorkNr3.RSA.RSA;
+import LaboratoryWorkNr3.RSAImplementation.Keys.KeyGenerator;
+import LaboratoryWorkNr3.RSAImplementation.Keys.KeySet;
+import LaboratoryWorkNr3.RSAImplementation.RSA.RSA;
 
 import java.math.BigInteger;
 

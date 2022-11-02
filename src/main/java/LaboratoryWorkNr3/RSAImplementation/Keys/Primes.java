@@ -1,4 +1,4 @@
-package LaboratoryWorkNr3.Keys;
+package LaboratoryWorkNr3.RSAImplementation.Keys;
 
 public class Primes {
     public static int[] primeNumbers = new int[]{ 2, 3, 5, 7, 11, 13, 17, 19,
